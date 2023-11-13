@@ -1,5 +1,5 @@
 # kiki
-Music service clone project.
+A music service clone project.
 ******************
 Welcome to the kiki music service.
 
