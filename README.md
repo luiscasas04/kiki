@@ -3,7 +3,7 @@ Music service clone project.
 ******************
 Welcome to the kiki music service.
 
-The purpose of this project is to practive our teams web development skills by using HTML,CSS and javascript. We will also be implementing a data base for personalized profiles/playlist.
+The purpose of this project is to practice our teams web development skills by using HTML,CSS and javascript. We will also be implementing a database for personalized profiles/playlist.
 
 
 
