@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kiki | music you ♥</title>
 	<!--css file-->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles.css">
 	
 </head>
 				
@@ -27,10 +27,89 @@
         </nav>
         <main>
             <!-- Your main content goes here -->
-			<div class="search-bar">
+			<!--<div class="search-bar">
 			<input type="text" placeholder="Search...">
 			<button>Search</button>
         </main>
     </div>
+	    <!-- 1st song and thumbnaill-->
+    <div class="thumbnail" 
+         onmouseover="showPlayButton(this)" 
+         onmouseout="hidePlayButton(this)" 
+         onclick="playMusic(this.dataset.songUrl, this.dataset.songInfo, this.dataset.thumbnailUrl)" 
+         data-song-url="music2/Bad Bunny - Party.mp3"
+         data-song-info="Bad Bunny - Party"
+         data-thumbnail-url="thumbnail/sin_ti.png">
+        <img src="thumbnail/sin_ti.png" alt="bad bunny - party">
+        <div class="playButton" id="playButton1">
+		<img src="thumbnail/play.png" alt="Play"></div>
+        <div class="songInfo">Bad Bunny - Party</div>
+    </div>
+<!-- 2nd song and thumbnaill-->
+	<div class="thumbnail" 
+         onmouseover="showPlayButton(this)" 
+         onmouseout="hidePlayButton(this)" 
+         onclick="playMusic(this.dataset.songUrl, this.dataset.songInfo, this.dataset.thumbnailUrl)" 
+         data-song-url="music2/Drake - In My Feelings.mp3"
+         data-song-info="Drake - In My Feelings"
+         data-thumbnail-url="thumbnail/Her_Loss.png">
+        <img src="thumbnail/Her_Loss.png" alt="Drake - In My Feelings">
+        <div class="playButton" id="playButton2">
+		<img src="thumbnail/play.png" alt="Play"></div>
+        <div class="songInfo">Drake - In My Feelings</div>
+    </div>
+<!-- 3rd song and thumbnaill-->	
+ 	<div class="thumbnail" 
+         onmouseover="showPlayButton(this)" 
+         onmouseout="hidePlayButton(this)" 
+         onclick="playMusic(this.dataset.songUrl, this.dataset.songInfo, this.dataset.thumbnailUrl)" 
+         data-song-url="music2/Darude - Sandstorm.mp3"
+         data-song-info="Darude - Sandstorm"
+         data-thumbnail-url="thumbnail/Sandstorm_single.jpg">
+        <img src="thumbnail/Sandstorm_single.jpg" alt="Darude - Sandstorm">
+        <div class="playButton" id="playButton3">
+		<img src="thumbnail/play.png" alt="Play"></div>
+        <div class="songInfo">Darude - Sandstorm</div>
+    </div>
+<!-- 4th song and thumbnaill-->	
+ 	<div class="thumbnail" 
+         onmouseover="showPlayButton(this)" 
+         onmouseout="hidePlayButton(this)" 
+         onclick="playMusic(this.dataset.songUrl, this.dataset.songInfo, this.dataset.thumbnailUrl)" 
+         data-song-url="music2/Nirvana - Smells Like Teen Spirit.mp3"
+         data-song-info="Nirvana - Smells Like Teen Spirit"
+         data-thumbnail-url="thumbnail/Nirvana.png">
+        <img src="thumbnail/Nirvana.png" alt="Nirvana - Smells Like Teen Spirit">
+        <div class="playButton" id="playButton4">
+		<img src="thumbnail/play.png" alt="Play"></div>
+        <div class="songInfo">Nirvana - Smells Like Teen Spirit</div>
+    </div>
+ <!-- 5th song and thumbnaill-->	
+ 	<div class="thumbnail" 
+         onmouseover="showPlayButton(this)" 
+         onmouseout="hidePlayButton(this)" 
+         onclick="playMusic(this.dataset.songUrl, this.dataset.songInfo, this.dataset.thumbnailUrl)" 
+         data-song-url="music2/Deadmau5 - Strobe (Radio Edit).mp3"
+         data-song-info="Deadmau5 - Strobe (Radio Edit)"
+         data-thumbnail-url="thumbnail/deadmau5.png">
+        <img src="thumbnail/deadmau5.png" alt="Deadmau5 - Strobe (Radio Edit)">
+        <div class="playButton" id="playButton5">
+		<img src="thumbnail/play.png" alt="Play"></div>
+        <div class="songInfo">Deadmau5 - Strobe (Radio Edit)</div>
+    </div>
+ 
+
+    <!-- Music Player -->
+    <div id="playerWindow">
+        <audio controls id="audioPlayer">
+            <!-- Audio function used by script to play song -->
+        </audio>
+        <div id="playerDetails">
+            <img id="playerThumbnail" src="" alt="Thumbnail">
+            <div id="playerSongInfo"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

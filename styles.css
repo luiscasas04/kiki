@@ -1,0 +1,180 @@
+/*comments are top down*/
+
+
+/*background color*/
+	body {
+	background-color: #1e1e1e; /*gray*/
+	margin: 0;
+    font-family: 'Arial', sans-serif;
+	display: flex;
+    flex-wrap: wrap;
+	}
+    #content {
+        position: relative;
+    }
+    #content img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+		left: 1px;
+ 
+/*Side navigation menu*/
+.container {
+    display: flex;
+}
+   }
+	
+.side-navigation {
+    width: 200px;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+	margin-right: 10px; /* Adds 10 pixels of space to the right of each link */
+}
+
+a:hover {
+    color: #1DB954; /* Green color */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+/* Search Bar */
+header {
+    background-color: #1e1e1e;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+	
+	margin-top: -775px;
+	margin-left:auto;
+	margin-right:auto;
+	width:100px;
+	padding-top: 0px;
+	padding-right: 900px;
+	padding-bottom: 100px;
+	padding-left: 0px;
+	display: flex;
+    align-items: center;
+	
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* this is for the music*/
+.thumbnail {
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+  
+   
+    
+    
+	
+}
+.thumbnail-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the thumbnails horizontally */
+    gap: 20px; /* Adjust the gap between thumbnails as needed */
+}
+.playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.thumbnail:hover .playButton {
+    display: block;
+}
+
+.playButton img {
+    width: 100%; 
+    height: 100%;
+}
+
+.songInfo {
+    text-align: center;
+    margin-top: 5px;
+    color: #333;
+}
+
+#playerWindow {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: none;
+}
+
+#audioPlayer {
+    width: 100%;
+}
+
+#playerDetails {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#playerThumbnail {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#playerSongInfo {
+    flex-grow: 1;
+}
+.container {
+    display: flex;
+	
+}
