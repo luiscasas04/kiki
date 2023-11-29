@@ -2,115 +2,136 @@
 
 
 /*background color*/
-	body {
-	background-color: #1e1e1e; /*gray*/
-	margin: 0;
-    font-family: 'Arial', sans-serif;
-	display: flex;
-    flex-wrap: wrap;
-	}
-    #content {
-        position: relative;
+
+    *{
+        padding: 0;
+        margin: 0;
     }
-    #content img {
+
+	body {
+	    background-color:#1a1a1a;
+        font-family: 'Montserrat', sans-serif;
+	}
+    .about{
         position: absolute;
-        top: 0px;
-        right: 0px;
-		left: 1px;
- 
-/*Side navigation menu*/
-.container {
-    display: flex;
-}
-   }
-	
-.side-navigation {
-    width: 200px;
-    height: 100vh;
-    background-color: black;
-    color: white;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+        bottom: 0;
+    }
+    .sidebar{
+        position: fixed;
+        background-color: black;
+        width: 200px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding: 20px;
+
+    }
+    .sidebar .navBar ul{
+        list-style: none;
+        margin-top: 25px;
+
+    }
+    .sidebar .navBar ul li{
+        padding: 15px 0px;
+
+    }
+    .sidebar .navBar ul li a{
+        color:lightgrey;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .sidebar .navBar ul li .fa{
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    .sidebar .navBar ul li a:hover, .sidebar .navBar ul li a:active, 
+    .sidebar .navBar ul li a:focus{
+        color: white;
+
+    }
+    .sidebar .navBar ul li a:hover .fa, .sidebar .navBar ul li a:active .fa, 
+    .sidebar .navBar ul li a:focus .fa{
+        color: white;
+
+    }
+
+    .container {
+  margin-left: 245px;
+  margin-bottom: 100px;
 }
 
-.logo {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    .topBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #101010;
+  padding: 14px 30px;
+}
+.topBar .prev-next-buttons button {
+  color: #7a7a7a;
+  cursor: not-allowed;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  font-size: 18px;
+  border: 0px;
+  background-color: #090909;
+  margin-right: 10px;
+}
+.topBar .nav {
+  display: flex;
+  align-items: center;
+}
+.topBar .nav ul {
+  list-style: none;
+}
+.topBar .nav ul li {
+  display: inline-block;
+  margin: 0px 8px;
+  width: 70px;
+}
+.topBar .nav ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.topBar .nav ul li a:hover,
+.topBar .nav ul li a:active,
+.topBar .nav ul li a:focus {
+  color: #ffffff;
+  font-size: 15px;
+}
+.topBar .nav ul li.divider {
+  color: #ffffff;
+  font-size: 26px;
+  margin: 0px 20px;
+  width: auto;
+}
+.topBar .nav button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.topBar .nav button:hover,
+.topBar .nav button:active,
+.topBar .nav button:focus {
+  background-color: #f2f2f2;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
 
-li {
-    margin-bottom: 10px;
-}
 
-a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-	margin-right: 10px; /* Adds 10 pixels of space to the right of each link */
-}
-
-a:hover {
-    color: #1DB954; /* Green color */
-}
-
-main {
-    flex: 1;
-    padding: 20px;
-}
-/* Search Bar */
-header {
-    background-color: #1e1e1e;
-    padding: 10px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.search-bar {
-	
-	margin-top: -775px;
-	margin-left:auto;
-	margin-right:auto;
-	width:100px;
-	padding-top: 0px;
-	padding-right: 900px;
-	padding-bottom: 100px;
-	padding-left: 0px;
-	display: flex;
-    align-items: center;
-	
-}
-
-.search-bar input {
-    padding: 5px;
-    margin-right: 10px;
-}
-
-.search-bar button {
-    padding: 5px 10px;
-    background-color: #1DB954;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-/* this is for the music*/
-.thumbnail {
+    .thumbnail {
     position: relative;
     cursor: pointer;
     margin: 10px;
-  
-   
-    
     
 	
 }
@@ -142,7 +163,7 @@ header {
 .songInfo {
     text-align: center;
     margin-top: 5px;
-    color: #333;
+    color: whitesmoke;
 }
 
 #playerWindow {
@@ -177,4 +198,3 @@ header {
 .container {
     display: flex;
 	
-}
