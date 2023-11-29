@@ -197,4 +197,19 @@
 }
 .container {
     display: flex;
-	
+}
+.playlist {
+    margin-bottom: 10px;
+  }
+    .playlist a {
+      display: block;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #333;
+      transition: background-color 0.3s ease;
+    }
+    .playlist a:hover {
+      background-color: #eee;
+    }	
