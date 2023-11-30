@@ -16,6 +16,16 @@
         position: absolute;
         bottom: 0;
     }
+    .about ul li a{
+      color:lightgrey;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .about ul li a:hover, .about ul li a:active, 
+    .about ul li a:focus{
+      color: white;
+    }
     .sidebar{
         position: fixed;
         background-color: black;
@@ -57,9 +67,9 @@
     }
 
     .container {
-  margin-left: 245px;
-  margin-bottom: 100px;
-}
+      margin-left: 245px;
+      margin-bottom: 100px;
+    }
 
     .topBar {
   display: flex;
@@ -232,4 +242,17 @@ color: #218d33;
 
 .p-playlist{
   color: #218d33;
+}
+
+.about-us h1{
+  color:#ffffff;
+  font-size: 30px;
+  text-align:center;
+  padding-top: 20px;
+}
+
+.about-us p{
+  color:#ffffff;
+  font-size: 18px;
+  padding: 10px 70px 80px;
 }
