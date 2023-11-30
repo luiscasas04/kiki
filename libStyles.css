@@ -1,0 +1,382 @@
+/*comments are top down*/
+
+
+/*background color*/
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+	body {
+	    background-color:#1a1a1a;
+        font-family: 'Montserrat', sans-serif;
+	}
+    .about{
+        position: absolute;
+        bottom: 0;
+    }
+    .about ul li a{
+      color:lightgrey;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .about ul li a:hover, .about ul li a:active, 
+    .about ul li a:focus{
+      color: white;
+    }
+    .sidebar{
+         position: fixed; 
+        background-color: black;
+        width: 200px;
+        left: 0px;
+        top: 0;
+        bottom: 0;
+        padding: 20px;
+	 display: inline-block; 
+	 float: left; 
+
+    }
+    .sidebar .navBar ul{
+        list-style: none;
+        margin-top: 25px;
+
+    }
+    .sidebar .navBar ul li{
+        padding: 15px 0px;
+
+    }
+    .sidebar .navBar ul li a{
+        color:lightgrey;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .sidebar .navBar ul li .fa{
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    .sidebar .navBar ul li a:hover, .sidebar .navBar ul li a:active, 
+    .sidebar .navBar ul li a:focus{
+        color: white;
+
+    }
+    .sidebar .navBar ul li a:hover .fa, .sidebar .navBar ul li a:active .fa, 
+    .sidebar .navBar ul li a:focus .fa{
+        color: white;
+
+    }
+
+    .container {
+      margin-left: 245px;
+      margin-bottom: 100px;
+    }
+
+    .topBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #101010;
+  padding: 14px 30px;
+}
+.topBar .prev-next-buttons button {
+  color: #7a7a7a;
+  cursor: not-allowed;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  font-size: 18px;
+  border: 0px;
+  background-color: #090909;
+  margin-right: 10px;
+}
+.topBar .nav {
+  display: flex;
+  align-items: center;
+}
+.topBar .nav ul {
+  list-style: none;
+}
+.topBar .nav ul li {
+  display: inline-block;
+  margin: 0px 8px;
+  width: 70px;
+}
+.topBar .nav ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.topBar .nav ul li a:hover,
+.topBar .nav ul li a:active,
+.topBar .nav ul li a:focus {
+  color: #ffffff;
+  font-size: 15px;
+}
+.topBar .nav ul li.divider {
+  color: #ffffff;
+  font-size: 26px;
+  margin: 0px 20px;
+  width: auto;
+}
+.topBar .nav button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.topBar .nav button:hover,
+.topBar .nav button:active,
+.topBar .nav button:focus {
+  background-color: #f2f2f2;
+}
+
+
+
+    .thumbnail {
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    
+	
+}
+.thumbnail-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the thumbnails horizontally */
+    gap: 20px; /* Adjust the gap between thumbnails as needed */
+}
+.playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.thumbnail:hover .playButton {
+    display: block;
+}
+
+.playButton img {
+    width: 100%; 
+    height: 100%;
+}
+
+.songInfo {
+    text-align: center;
+    margin-top: 5px;
+    color: whitesmoke;
+}
+
+#playerWindow {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: none;
+}
+
+#audioPlayer {
+    width: 100%;
+}
+
+#playerDetails {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#playerThumbnail {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#playerSongInfo {
+    flex-grow: 1;
+}
+.container {
+    display: flex;
+}
+.container-playlist {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.playlist {
+  margin-bottom: 20px;
+}
+
+.playlist-box {
+  border: 1px solid #218d33;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+
+.playlist-box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.playlist-box p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.playlist-header{
+color: #218d33;
+}
+
+.p-playlist{
+  color: #218d33;
+}
+
+.about-us h1{
+  color:#ffffff;
+  font-size: 30px;
+  text-align:center;
+  padding-top: 20px;
+}
+
+.about-us p{
+  color:#ffffff;
+  font-size: 18px;
+  padding: 10px 70px 80px;
+}
+
+/*Top menu bar for library page*/
+.toplibnav {
+  overflow: hidden;
+  background-color: #333;
+  width: 250px;
+  max-width: 250px;
+  position: absolute;
+  height: 100%;
+  float: right;
+  left: 240px;
+  
+}
+
+.toplibnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.toplibnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.toplibnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/*library buttons for playlist
+.libButton {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline;
+    font-family: 'Arial', sans-serif;
+}
+*/
+
+/*
+For displaying playlists
+
+.playlists-group{
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+}
+
+.playlist-card{
+    flex: 0 0 auto;
+    max-width: 150px;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.playlist-card-img{
+    width: 100%;
+    height: 150px;
+    object-fit: scale-down;
+    border-radius: 20px;
+    float: left;
+}
+
+.playlist-card-name{
+    width: 100%;
+    text-align: justify;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+*/
+
+
+
+
+/*For displaying audio visualization*/
+#thefile {
+  position: fixed;
+  top: 10px;
+  left: 790px;
+  z-index: 100;
+}
+
+#canvas {
+  position: fixed;
+  float: left;
+  left: 500px;
+  top: 50px;
+  width: 70%;
+  height: 100%;
+}
+
+audio {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  width: calc(100% - 20px);
+}
+
+/*library song buttons*/
+button.s1 { 
+  background:none; 
+  border:none; 
+}
+
+
+
