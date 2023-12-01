@@ -225,7 +225,7 @@ body {
 }
 
 
-/* Playlist List Styles */
+/* Playlist List Styles luis and marcia */
 .playlist-list {
   list-style: none;
   padding: 0;
@@ -269,7 +269,7 @@ body {
   margin: 0;
   color: #fff; /* White Text Color */
 }
-
+/*about us link*/
 
 .about-us h1{
   color:#ffffff;
@@ -283,8 +283,57 @@ body {
   font-size: 18px;
   padding: 10px 70px 80px;
 }
-
 .container .welcome h1{
   color:#ffffff;
   padding-top: 20px;
+}
+/* search tab luis*/
+
+.search-tab {
+    margin-top: 20px;
+    margin-left: 300px; /* This moves the search tab to the right */
+    display: flex;
+    align-items: center;
+}
+
+.search-tab input {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-tab button {
+    background-color: #1DB954;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-tab button:hover {
+    background-color: #1A8243;
+}
+
+/* dropdown menu luis*/
+.dropdown {
+    position: absolute;
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 60px; /* Adjust to move the dropdown lower */
+}
+
+.dropdown a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
 }
