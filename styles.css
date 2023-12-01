@@ -3,69 +3,75 @@
 
 /*background color*/
 
-*{
-  padding: 0;
-  margin: 0;
-}
+    *{
+        padding: 0;
+        margin: 0;
+    }
 
-body {
-  background-color:#1a1a1a;
-  font-family: 'Montserrat', sans-serif;
-}
-.about{
-  position: absolute;
-  bottom: 0;
-}
-.about ul li a{
-  color:lightgrey;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 15px;
-}
-.about ul li a:hover, .about ul li a:active, .about ul li a:focus{
-  color: white;
-}
-.sidebar{
-  position: fixed;
-  background-color: black;
-  width: 200px;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  padding: 20px;
-}
-.sidebar .navBar ul{
-  list-style: none;
-  margin-top: 25px;
-}
-.sidebar .navBar ul li{
-  padding: 15px 0px;
-}
-.sidebar .navBar ul li a{
-  color:lightgrey;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 15px;
-}
-.sidebar .navBar ul li .fa{
-  font-size: 20px;
-  margin-right: 15px;
-}
-.sidebar .navBar ul li a:hover, .sidebar .navBar ul li a:active, 
-.sidebar .navBar ul li a:focus{
-  color: white;
-}
-.sidebar .navBar ul li a:hover .fa, .sidebar .navBar ul li a:active .fa, 
-.sidebar .navBar ul li a:focus .fa{
-  color: white;
-}
+	body {
+	    background-color:#1a1a1a;
+        font-family: 'Montserrat', sans-serif;
+	}
+    .about{
+        position: absolute;
+        bottom: 0;
+    }
+    .about ul li a{
+      color:lightgrey;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .about ul li a:hover, .about ul li a:active, 
+    .about ul li a:focus{
+      color: white;
+    }
+    .sidebar{
+        position: fixed;
+        background-color: black;
+        width: 200px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding: 20px;
 
-.container {
-  margin-left: 245px;
-  margin-bottom: 100px;
-}
+    }
+    .sidebar .navBar ul{
+        list-style: none;
+        margin-top: 25px;
 
-.topBar {
+    }
+    .sidebar .navBar ul li{
+        padding: 15px 0px;
+
+    }
+    .sidebar .navBar ul li a{
+        color:lightgrey;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .sidebar .navBar ul li .fa{
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    .sidebar .navBar ul li a:hover, .sidebar .navBar ul li a:active, 
+    .sidebar .navBar ul li a:focus{
+        color: white;
+
+    }
+    .sidebar .navBar ul li a:hover .fa, .sidebar .navBar ul li a:active .fa, 
+    .sidebar .navBar ul li a:focus .fa{
+        color: white;
+
+    }
+
+    .container {
+      margin-left: 245px;
+      margin-bottom: 100px;
+    }
+
+    .topBar {
   display: flex;
   justify-content: space-between;
   background-color: #101010;
@@ -130,164 +136,128 @@ body {
   background-color: #f2f2f2;
 }
 
-.thumbnail {
-  position: relative;
-  cursor: pointer;
-  margin: 10px;
+
+
+ .thumbnail {
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    
+	
 }
 .thumbnail-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center the thumbnails horizontally */
-  gap: 20px; /* Adjust the gap between thumbnails as needed */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the thumbnails horizontally */
+    gap: 20px; /* Adjust the gap between thumbnails as needed */
 }
 .playButton {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px;
-  height: 50px;
-  display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    display: none;
 }
 
 .thumbnail:hover .playButton {
-  display: block;
+    display: block;
 }
 
 .playButton img {
-  width: 100%; 
-  height: 100%;
+    width: 100%; 
+    height: 100%;
 }
 
 .songInfo {
-  text-align: center;
-  margin-top: 5px;
-  color: whitesmoke;
+    text-align: center;
+    margin-top: 5px;
+    color: whitesmoke;
 }
 
 #playerWindow {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #f1f1f1;
-  padding: 10px;
-  display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: none;
 }
 
 #audioPlayer {
-  width: 100%;
+    width: 100%;
 }
 
 #playerDetails {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
 }
 
 #playerThumbnail {
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 #playerSongInfo {
-  flex-grow: 1;
+    flex-grow: 1;
 }
-/* Header Styles */
-.header {
-  background-color: #333; /* Dark Gray */
-  color: #23af23; /* Neon Green */
+
+.container {
+    display: flex;
+}
+.container-playlist {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.playlist {
+  margin-bottom: 20px;
+}
+
+.playlist-box {
+  border: 1px solid #218d33;
+  padding: 10px;
   text-align: center;
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-between; /* Align items horizontally */
-  
+  width: 200px;
+  height: 200px;
 }
 
-.playlist-header {
-  margin: 0;
-}
-
-.create-playlist-btn {
-  padding: 10px 20px;
-  background-color: #23af23; /* Neon Green */
-  color: black;
-  border: none;
+.playlist-box img {
+  width: 200px;
+  height: 200px;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.create-playlist-btn:hover {
-  background-color: #33cc11; 
+.playlist-box p {
+  margin: 10px 0;
+  font-weight: bold;
 }
 
-
-/* Playlist List Styles luis and marcia */
-.playlist-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
-  gap: 20px;
+.playlist-header{
+color: #218d33;
 }
 
-.playlist-item {
-  border: 2px solid #39ff14; /* Neon Green */
-  background-color: #333; /* Dark Gray */
-  padding: 20px;
-  text-align: center;
-  width: 200px; /* Set a fixed width for playlist items */
+.p-playlist{
+  color: #218d33;
 }
-
-.playlist-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.playlist2-item {
-  border: 2px solid #39ff14; /* Neon Green */
-  background-color: #333; /* Dark Gray */
-  padding: 20px;
-  text-align: center;
-  width: 200px; /* Set a fixed width for playlist items */
-}
-
-.playlist2-item img {
-  width: 100%;
-  height: 88%;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.playlist-name {
-  margin: 0;
-  color: #fff; /* White Text Color */
-}
-/*about us link*/
-
-.about-us h1{
-  color:#39ff14;
+/*about us*/
+.about-us h1 {
+  color: #ffffff;
   font-size: 30px;
-  text-align:center;
+  text-align: center;
   padding-top: 20px;
 }
 
-.about-us p{
-  color:#ffffff;
+.about-us p {
+  color: #ffffff;
   font-size: 18px;
-  padding: 10px 70px 80px;
+  padding: 10px 70px 20px; /*1st top padding, 2nd right padding, 3rd bottom padding*/
 }
-.container .welcome h1{
-  color:#ffffff;
-  padding-top: 20px;
-}
-/* search tab luis*/
+/* search tab */
 
 .search-tab {
     margin-top: 20px;
@@ -316,7 +286,7 @@ body {
     background-color: #1A8243;
 }
 
-/* dropdown menu luis*/
+/* dropdown menu */
 .dropdown {
     position: absolute;
     display: none;
@@ -337,4 +307,3 @@ body {
 .dropdown a:hover {
     background-color: #ddd;
 }
-
