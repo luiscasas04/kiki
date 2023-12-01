@@ -283,3 +283,8 @@ body {
   font-size: 18px;
   padding: 10px 70px 80px;
 }
+
+.container .welcome h1{
+  color:#ffffff;
+  padding-top: 20px;
+}
