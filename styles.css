@@ -205,44 +205,81 @@
 #playerSongInfo {
     flex-grow: 1;
 }
-.container {
-    display: flex;
-}
-.container-playlist {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-}
-.playlist {
-  margin-bottom: 20px;
-}
-
-.playlist-box {
-  border: 1px solid #218d33;
-  padding: 10px;
+/* Header Styles */
+.header {
+  background-color: #333; /* Dark Gray */
+  color: #23af23; /* Neon Green */
   text-align: center;
-  width: 200px;
-  height: 200px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between; /* Align items horizontally */
+  
 }
 
-.playlist-box img {
-  width: 200px;
-  height: 200px;
+.playlist-header {
+  margin: 0;
+}
+
+.create-playlist-btn {
+  padding: 10px 20px;
+  background-color: #23af23; /* Neon Green */
+  color: black;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.playlist-box p {
-  margin: 10px 0;
-  font-weight: bold;
+.create-playlist-btn:hover {
+  background-color: #33cc11; 
 }
 
-.playlist-header{
-color: #218d33;
+
+/* Playlist List Styles */
+.playlist-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+  gap: 20px;
 }
 
-.p-playlist{
-  color: #218d33;
+.playlist-item {
+  border: 2px solid #39ff14; /* Neon Green */
+  background-color: #333; /* Dark Gray */
+  padding: 20px;
+  text-align: center;
+  width: 200px; /* Set a fixed width for playlist items */
 }
+
+.playlist-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.playlist2-item {
+  border: 2px solid #39ff14; /* Neon Green */
+  background-color: #333; /* Dark Gray */
+  padding: 20px;
+  text-align: center;
+  width: 200px; /* Set a fixed width for playlist items */
+}
+
+.playlist2-item img {
+  width: 100%;
+  height: 88%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.playlist-name {
+  margin: 0;
+  color: #fff; /* White Text Color */
+}
+
 
 .about-us h1{
   color:#ffffff;
