@@ -272,7 +272,7 @@ body {
 /*about us link*/
 
 .about-us h1{
-  color:#ffffff;
+  color:#39ff14;
   font-size: 30px;
   text-align:center;
   padding-top: 20px;
@@ -337,3 +337,4 @@ body {
 .dropdown a:hover {
     background-color: #ddd;
 }
+
