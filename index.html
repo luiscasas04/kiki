@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiki | music you ♥</title>
+	<!--css file-->
+	<link rel="stylesheet" href="styles.css">
+	
+</head>
+				
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <!--Side Bar-->
+    <div class= "sidebar">
+        <div class = "logo"> <!--kiki Logo-->
+            <a href="#" >
+                <img src="blkgrnresize2.png" alt ="logo"/>
+            </a>
+        <!--Main side Navigation Bar-->
+        </div>
+        <div class="navBar">
+            <ul>
+                <li> <!--Home Button-->
+                    <a href="index.html">
+                        <span class="fa fa-home"></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li><!--Search Button-->
+                    <a href="Search.html">
+                        <span class="fa fa-search"></span>
+                        <span>Search</span>
+                    </a>
+                </li>
+
+                <li><!--Your Library Button-->
+                    <a href="songs.html">
+                        <span class="fa fa-book"></span>
+                        <span>Your Library</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="navBar">
+            <ul>
+                <li><!--Playlist Button-->
+                    <a href="Playlist.html">
+                        <span class="fa fa-play"></span>
+                        <span>Playlists</span>
+                    </a>
+                </li>
+
+                <li><!--Liked Songs Button-->
+                    <a href="Liked.html">
+                        <span class="fa fa-heart"></span>
+                        <span>Liked Songs</span>
+                    </a>
+                </li>
+
+             </ul>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="about">
+            <ul>
+                <li><!--About Us Button-->
+                    <a href="About.html">
+                        <span class=""></span>
+                        <span>About Us</span>
+                    </a>
+                </li>
+            </div>
+
+
+    </div>
+<style></style>
+    <div class="container">
+        <div class="welcome">
+            
+        </div>
+ <!-- 1st song and thumbnaill-->
+    <div class="thumbnail" 
+        onmouseover="showPlayButton(this)" 
+        onmouseout="hidePlayButton(this)" 
+        onclick="playMusic(this.dataset.songUrl, this.dataset.songInfo, this.dataset.thumbnailUrl)" 
+        data-song-url="music2/Bad Bunny - Party.mp3"
+        data-song-info="Bad Bunny - Party"
+        data-thumbnail-url="thumbnail/sin_ti.png">
+        <img src="thumbnail/sin_ti.png" alt="bad bunny - party">
+        <div class="playButton" id="playButton1">
+            <img src="thumbnail/play.png" alt="Play"></div>
+        <div class="songInfo">Bad Bunny - Party</div>
+	    <title>Heart Toggle</title>
+        <style>
+            .heart {
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+            .filled {
+                color: red;
+            }
+        </style>
+        </head>
+
+        <body>
+            <div class="heart" onclick="toggleHeart(this)">
+                <i id="heartIcon" class="fa fa-heart"></i>
+            </div>
+
+            <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+            <script>
+                function toggleHeart(heart) {
+                    const heartIcon = heart.querySelector('i.fa-heart');
+                    heartIcon.classList.toggle('filled');
+                }
+            </script>
+    </div>
+<!-- 2nd song and thumbnaill-->
+    <div class="thumbnail" 
+        onmouseover="showPlayButton(this)" 
+        onmouseout="hidePlayButton(this)" 
+        onclick="playMusic(this.dataset.songUrl, this.dataset.songInfo, this.dataset.thumbnailUrl)" 
+        data-song-url="music2/Drake - In My Feelings.mp3"
+        data-song-info="Drake - In My Feelings"
+        data-thumbnail-url="thumbnail/Her_Loss.png">
+        <img src="thumbnail/Her_Loss.png" alt="Drake - In My Feelings">
+        <div class="playButton" id="playButton2">
+            <img src="thumbnail/play.png" alt="Play"></div>
+        <div class="songInfo">Drake - In My Feelings</div>
+	    <title>Heart Toggle</title>
+        <style>
+            .heart {
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+            .filled {
+                color: red;
+            }
+        </style>
+        </head>
+
+        <body>
+            <div class="heart" onclick="toggleHeart(this)">
+                <i id="heartIcon" class="fa fa-heart"></i>
+            </div>
+
+            <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+            <script>
+                function toggleHeart(heart) {
+                    const heartIcon = heart.querySelector('i.fa-heart');
+                    heartIcon.classList.toggle('filled');
+                }
+            </script>
+    </div>
+<!-- 3rd song and thumbnaill-->	
+    <div class="thumbnail" 
+        onmouseover="showPlayButton(this)" 
+        onmouseout="hidePlayButton(this)" 
+        onclick="playMusic(this.dataset.songUrl, this.dataset.songInfo, this.dataset.thumbnailUrl)" 
+        data-song-url="music2/Darude - Sandstorm.mp3"
+        data-song-info="Darude - Sandstorm"
+        data-thumbnail-url="thumbnail/Sandstorm_single.jpg">
+        <img src="thumbnail/Sandstorm_single.jpg" alt="Darude - Sandstorm">
+        <div class="playButton" id="playButton3">
+            <img src="thumbnail/play.png" alt="Play"></div>
+        <div class="songInfo">Darude - Sandstorm</div>
+	    <title>Heart Toggle</title>
+        <style>
+            .heart {
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+            .filled {
+                color: red;
+            }
+        </style>
+        </head>
+
+        <body>
+            <div class="heart" onclick="toggleHeart(this)">
+                <i id="heartIcon" class="fa fa-heart"></i>
+            </div>
+
+            <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+            <script>
+                function toggleHeart(heart) {
+                    const heartIcon = heart.querySelector('i.fa-heart');
+                    heartIcon.classList.toggle('filled');
+                }
+            </script>
+    </div>
+<!-- 4th song and thumbnaill-->	
+    <div class="thumbnail" 
+        onmouseover="showPlayButton(this)" 
+        onmouseout="hidePlayButton(this)" 
+        onclick="playMusic(this.dataset.songUrl, this.dataset.songInfo, this.dataset.thumbnailUrl)" 
+        data-song-url="music2/Nirvana - Smells Like Teen Spirit.mp3"
+        data-song-info="Nirvana - Smells Like Teen Spirit"
+        data-thumbnail-url="thumbnail/Nirvana.png">
+        <img src="thumbnail/Nirvana.png" alt="Nirvana - Smells Like Teen Spirit">
+        <div class="playButton" id="playButton4">
+            <img src="thumbnail/play.png" alt="Play"></div>
+        <div class="songInfo">Nirvana - Smells Like Teen Spirit</div>
+	    <title>Heart Toggle</title>
+        <style>
+            .heart {
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+            .filled {
+                color: red;
+            }
+        </style>
+        </head>
+
+        <body>
+            <div class="heart" onclick="toggleHeart(this)">
+                <i id="heartIcon" class="fa fa-heart"></i>
+            </div>
+
+            <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+            <script>
+                function toggleHeart(heart) {
+                    const heartIcon = heart.querySelector('i.fa-heart');
+                    heartIcon.classList.toggle('filled');
+                }
+            </script>
+    </div>
+<!-- 5th song and thumbnaill-->	
+    <div class="thumbnail" 
+        onmouseover="showPlayButton(this)" 
+        onmouseout="hidePlayButton(this)" 
+        onclick="playMusic(this.dataset.songUrl, this.dataset.songInfo, this.dataset.thumbnailUrl)" 
+        data-song-url="music2/Deadmau5 - Strobe (Radio Edit).mp3"
+        data-song-info="Deadmau5 - Strobe (Radio Edit)"
+        data-thumbnail-url="thumbnail/deadmau5.png">
+        <img src="thumbnail/deadmau5.png" alt="Deadmau5 - Strobe (Radio Edit)">
+        <div class="playButton" id="playButton5">
+            <img src="thumbnail/play.png" alt="Play"></div>
+        <div class="songInfo">Deadmau5 - Strobe (Radio Edit)</div>
+	    <title>Heart Toggle</title>
+        <style>
+            .heart {
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+            .filled {
+                color: red;
+            }
+        </style>
+        </head>
+
+        <body>
+            <div class="heart" onclick="toggleHeart(this)">
+                <i id="heartIcon" class="fa fa-heart"></i>
+            </div>
+
+            <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+            <script>
+                function toggleHeart(heart) {
+                    const heartIcon = heart.querySelector('i.fa-heart');
+                    heartIcon.classList.toggle('filled');
+                }
+            </script>
+    </div>
+
+
+<!-- Music Player -->
+<div id="playerWindow">
+<audio controls id="audioPlayer">
+   <!-- Audio function used by script to play song -->
+</audio>
+<div id="playerDetails">
+   <img id="playerThumbnail" src="" alt="Thumbnail">
+   <div id="playerSongInfo"></div>
+</div>
+</div>
+
+<script src="scripts.js"></script>
+  
+   
+</div>
+   
+</body>
+</html>
