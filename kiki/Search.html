@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiki | music you ♥ - Search</title>
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--Side Bar-->
+    <div class="sidebar">
+        <div class="logo"> <!--kiki Logo-->
+            <a href="#">
+                <img src="blkgrnresize2.png" alt="logo"/>
+            </a>
+        </div>
+
+        <!-- Main side Navigation Bar -->
+        <div class="navBar">
+            <ul>
+                <li> <!--Home Button-->
+                    <a href="main.html">
+                        <span class="fa fa-home"></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li><!--Search Button-->
+                    <a href="Search.html" class="active">
+                        <span class="fa fa-search"></span>
+                        <span>Search</span>
+                    </a>
+                </li>
+                <li><!--Your Library Button-->
+                    <a href="songs.html">
+                        <span class="fa fa-book"></span>
+                        <span>Your Library</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navBar">
+            <ul>
+                <li><!--Playlist Button-->
+                    <a href="Playlist.html">
+                        <span class="fa fa-play"></span>
+                        <span>Playlists</span>
+                    </a>
+                </li>
+                <li><!--Liked Songs Button-->
+                    <a href="Liked.html">
+                        <span class="fa fa-heart"></span>
+                        <span>Liked Songs</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="about">
+            <ul>
+                <li style="margin-top: -70px;"><!--About Us Button-->
+                    <a href="About.html">
+                        <span class=""></span>
+                        <span>About Us</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <!-- Search Tab -->
+        <div class="search-tab">
+            <input type="text" placeholder="Search..." id="searchInput" oninput="searchMusic()">
+            <button><span class="fa fa-search"></span></button>
+
+            <!-- Dropdown Menu -->
+            <div class="dropdown" id="musicDropdown">
+                <!-- Content will be dynamically added here using JavaScript -->
+            </div>
+
+            <!-- Audio Player -->
+			
+            <audio controls id="audioPlayer"></audio>
+        </div>
+        <!-- Rest of your main content goes here -->
+    </main>
+
+    
+<script>
+    const songs = [
+        { title: 'Darude - Sandstorm', url: 'music2/Darude - Sandstorm.mp3', thumbnail: 'thumbnail/Sandstorm_single.jpg' },
+        { title: 'Bad Bunny - Party.mp3', url: 'music2/Bad Bunny - Party.mp3', thumbnail: 'thumbnail/sin_ti.png' },
+		{ title: 'Deadmau5 - Strobe (Radio Edit).mp3', url: 'music2/Deadmau5 - Strobe (Radio Edit).mp3', thumbnail: 'thumbnail/deadmau5.png' },
+		{ title: 'Drake - In My Feelings.mp3', url: 'music2/Drake - In My Feelings.mp3', thumbnail: 'thumbnail/Her_Loss.png' },
+		{ title: 'Nirvana - Smells Like Teen Spirit.mp3', url: 'music2/Nirvana - Smells Like Teen Spirit.mp3', thumbnail: 'thumbnail/Nirvana.png' }
+        // Add more songs as needed
+    ];
+
+    function searchMusic() {
+        // Get the search query
+        const query = document.getElementById('searchInput').value.toLowerCase();
+
+        // Filter songs based on the search query
+        const filteredSongs = songs.filter(song =>
+            song.title.toLowerCase().includes(query)
+        );
+
+        // Populate the dropdown with filtered songs
+        const dropdown = document.getElementById('musicDropdown');
+        dropdown.innerHTML = '';
+
+        filteredSongs.forEach(song => {
+            const link = document.createElement('a');
+            link.textContent = song.title;
+            link.addEventListener('click', () => playMusic(song.url, song.title, song.thumbnail));
+            dropdown.appendChild(link);
+        });
+
+        // Display the dropdown
+        dropdown.style.display = 'block';
+    }
+
+    function playMusic(songUrl, songInfo, thumbnailUrl) {
+        const audioPlayer = document.getElementById('audioPlayer');
+        audioPlayer.src = songUrl;
+        audioPlayer.play();
+    }
+</script>
+
+
+</body>
+</html>
+
+

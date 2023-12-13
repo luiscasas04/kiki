@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kiki | Library</title>
+        <!--css file-->
+	<link rel="stylesheet" href="libStyles.css">
+</head>
+
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+<!--Side Bar-->
+    <div class= "sidebar">
+        <div class = "logo"> <!--kiki Logo-->
+            <a href="#" >
+                <img src="blkgrnresize2.png" alt ="logo"/>
+            </a>
+        <!--Main side Navigation Bar-->
+        </div>
+        <div class="navBar">
+            <ul>
+                <li> <!--Home Button-->
+                    <a href="main.html">
+                        <span class="fa fa-home"></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li><!--Search Button-->
+                    <a href="Search.html">
+                        <span class="fa fa-search"></span>
+                        <span>Search</span>
+                    </a>
+                </li>
+
+                <li><!--Your Library Button-->
+                    <a href="songs.html">
+                        <span class="fa fa-book"></span>
+                        <span>Your Library</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="navBar">
+            <ul>
+                <li><!--Playlist Button-->
+                    <a href="Playlist.html">
+                        <span class="fa fa-play"></span>
+                        <span>Playlists</span>
+                    </a>
+                </li>
+
+                <li><!--Liked Songs Button-->
+                    <a href="Liked.html">
+                        <span class="fa fa-heart"></span>
+                        <span>Liked Songs</span>
+                    </a>
+                </li>
+
+             </ul>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="about">
+            <ul>
+                <li><!--About Us Button-->
+                    <a href="About.html">
+                        <span class=""></span>
+                        <span>About Us</span>
+                    </a>
+                </li>
+            </div>
+    </div>
+
+	
+	<!-- top menu bar -->
+	<div class="toplibnav">
+	   <a>&nbsp;&nbsp;</a>
+ 	   <a class="active">Songs</a>
+ 	   <a href="upload.html">Upload</a>
+	<!-- List of songs presented in a table -->
+	<table id="songList">
+	    <tbody>
+		<tr>
+		    <!-- <th width="25px" align="center">&nbsp;</th> -->                                                                                      
+		    <th width="25px" align="center"><p style ="color: white;">#</p></th>   
+		    <th width="100px" align="center"><p style ="color: white;">Song Name</p></th>      
+		    <th width="150px" align="right"><p style ="color: white;">Artist</p></th>
+		</tr>
+		<tr>
+		    <td align="right" style="padding-right: 8px; color: white;">1.</td>
+		    <td align="right">
+			<div class="thumbnail" 
+         		    onmouseover="showPlayButton(this)" 
+         		    onmouseout="hidePlayButton(this)"  
+         		    onclick="playMusic(this.dataset.songUrl, this.dataset.songInfo, this.dataset.thumbnailUrl)" 
+         		    data-song-url="music2/Bad Bunny - Party.mp3"
+         		    data-song-info="Bad Bunny - Party"
+         		    data-thumbnail-url="thumbnail/sin_ti.png">
+        		   <div class="playButton" id="playButton1">
+			   	<img src="thumbnail/play.png" alt="Play"></div>
+        		<div class="songInfo">Party</div>
+		    </div></td>  
+		    <td align="right" style="padding-right: 8px; color: white;">Bad Bunny</td>
+		</tr>
+		<tr>
+		    <td align="right" style="padding-right: 8px; color: white;">2.</td>
+		    <td align="right">
+			<div class="thumbnail" 
+         		onmouseover="showPlayButton(this)" 
+         		onmouseout="hidePlayButton(this)" 
+         		onclick="playMusic(this.dataset.songUrl, this.dataset.songInfo, this.dataset.thumbnailUrl)" 
+         		data-song-url="music2/Darude - Sandstorm.mp3"
+         		data-song-info="Darude - Sandstorm"
+         		data-thumbnail-url="thumbnail/Sandstorm_single.jpg">
+        		<div class="playButton" id="playButton3">
+			    <img src="thumbnail/play.png" alt="Play"></div>
+        		<div class="songInfo">Sandstorm</div>
+		    </div></td>  
+		    <td align="right" style="padding-right: 8px; color: white;">Darude</td>
+		</tr>
+		<tr>
+		    <td align="right" style="padding-right: 8px; color: white;">3.</td>
+		    <td align="right">
+			<div class="thumbnail" 
+         		onmouseover="showPlayButton(this)" 
+         		onmouseout="hidePlayButton(this)" 
+        		onclick="playMusic(this.dataset.songUrl, this.dataset.songInfo, this.dataset.thumbnailUrl)" 
+         		data-song-url="music2/Deadmau5 - Strobe (Radio Edit).mp3"
+         		data-song-info="Deadmau5 - Strobe (Radio Edit)"
+         		data-thumbnail-url="thumbnail/deadmau5.png">
+        		<div class="playButton" id="playButton5">
+			<img src="thumbnail/play.png" alt="Play"></div>
+        		   <div class="songInfo">Strobe</div>
+			</div></td>  
+		    <td align="right" style="padding-right: 8px; color: white;">DeadMau5</td>
+		</tr>
+		<tr>
+		    <td align="right" style="padding-right: 8px; color: white;">4.</td>
+		    <td align="right">
+			<div class="thumbnail" 
+         		onmouseover="showPlayButton(this)" 
+         		onmouseout="hidePlayButton(this)" 
+         		onclick="playMusic(this.dataset.songUrl, this.dataset.songInfo, this.dataset.thumbnailUrl)" 
+         		data-song-url="music2/Drake - In My Feelings.mp3"
+         		data-song-info="Drake - In My Feelings"
+         		data-thumbnail-url="thumbnail/Her_Loss.png">
+        		<div class="playButton" id="playButton2">
+			<img src="thumbnail/play.png" alt="Play"></div>
+        		<div class="songInfo">In My Feelings</div>
+		    </div></td>  
+		    <td align="right" style="padding-right: 8px; color: white;">Drake</td>
+		</tr>
+		<tr>
+		    <td align="right" style="padding-right: 8px; color: white;">5.</td>
+		    <td align="right">
+			<div class="thumbnail" 
+         		onmouseover="showPlayButton(this)" 
+         		onmouseout="hidePlayButton(this)" 
+         		onclick="playMusic(this.dataset.songUrl, this.dataset.songInfo, this.dataset.thumbnailUrl)" 
+         		data-song-url="music2/Nirvana - Smells Like Teen Spirit.mp3"
+         		data-song-info="Nirvana - Smells Like Teen Spirit"
+         		data-thumbnail-url="thumbnail/Nirvana.png">
+        		<div class="playButton" id="playButton4">
+			<img src="thumbnail/play.png" alt="Play"></div>
+        		<div class="songInfo">Smells Like Teen Spirit</div>
+		    </div></td>  
+		    <td align="right" style="padding-right: 8px; color: white;">Nirvana</td>
+		</tr> 		
+	</div>
+
+
+	 <!-- Music Player -->
+    	<div id="playerWindow">
+        <audio controls id="audioPlayer">
+            <!-- Audio function used by script to play song -->
+        </audio>
+        <div id="playerDetails">
+            <img id="playerThumbnail" src="" alt="Thumbnail">
+            <div id="playerSongInfo"></div>
+        </div>
+    </div>
+
+
+	<script src="libScripts.js"></script>
+</body>
+
+</html>
+
+
+		
+
+
+
