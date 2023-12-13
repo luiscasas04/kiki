@@ -1,7 +1,7 @@
 # kiki
 A music service clone project.
 ******************
-Welcome to the kiki music service.
+Welcome to the kiki.
 
 The purpose of this project is to practice our teams web development skills by using HTML,CSS and javascript. We will also be implementing a database for personalized profiles/playlist.
 
